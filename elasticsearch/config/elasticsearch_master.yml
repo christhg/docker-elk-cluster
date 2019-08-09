@@ -20,3 +20,4 @@ node.master: true
 node.data: true
 http.cors.enabled: true
 http.cors.allow-origin: "*"
+discovery.zen.ping.unicast.hosts: ["elasticsearch","elasticsearch1","elasticsearch2"]

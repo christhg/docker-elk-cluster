@@ -21,17 +21,6 @@ services:
     networks:
       - elk
 
-  elasticsearch-head:
-    image: 'mobz/elasticsearch-head:5'
-    container_name: head
-    volumes:
-      - ./head/Gruntfile.js:/usr/src/app/Gruntfile.js
-      - ./head/_site/app.js:/usr/src/app/_site/app.js
-    ports:
-      - '9100:9100'
-    networks:
-      - elk
-
   logstash:
     build:
       context: logstash/
