@@ -1,9 +1,9 @@
 ## Default Elasticsearch configuration from elasticsearch-docker.
 ## from https://github.com/elastic/elasticsearch-docker/blob/master/build/elasticsearch/elasticsearch.yml
 #
-cluster.name: "docker-cluster"
-network.bind_host: 0.0.0.0
-network.host: 0.0.0.0
+#cluster.name: "docker-cluster"
+#network.bind_host: 0.0.0.0
+#network.host: 0.0.0.0
 
 # minimum_master_nodes need to be explicitly set when bound on a public IP
 # set to 1 to allow single node clusters
@@ -14,7 +14,7 @@ discovery.zen.minimum_master_nodes: 1
 ## see https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
 #
 #discovery.type: single-node
-cluster.routing.allocation.disk.threshold_enabled: false
+#cluster.routing.allocation.disk.threshold_enabled: false
 node.name: node1
 node.master: false
 node.data: true
@@ -23,4 +23,4 @@ http.cors.allow-origin: "*"
 #discovery.zen.ping.unicast.hosts: elasticsearch
 #discovery.zen.ping.unicast.hosts: ["elasticsearch","elasticsearch1","elasticsearch2"]
 #discovery.zen.ping.unicast.hosts: ["192.168.0.43","192.168.0.42","192.168.0.41"]
-discovery.zen.ping.unicast.hosts: ["192.168.201.63","192.168.201.62","192.168.201.61"]
+#discovery.zen.ping.unicast.hosts: ["192.168.201.63","192.168.201.62","192.168.201.61"]
