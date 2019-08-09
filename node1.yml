@@ -6,7 +6,7 @@ services:
       context: elasticsearch/
       args:
         ELK_VERSION: $ELK_VERSION
-    container_name: es-master
+    container_name: es-node1
     volumes:
       - ./elasticsearch/config/elasticsearch_node1.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
     ports:

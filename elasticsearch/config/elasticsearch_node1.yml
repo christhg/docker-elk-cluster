@@ -21,4 +21,5 @@ node.data: true
 http.cors.enabled: true
 http.cors.allow-origin: "*"
 #discovery.zen.ping.unicast.hosts: elasticsearch
-discovery.zen.ping.unicast.hosts: ["elasticsearch","elasticsearch1","elasticsearch2"]
+#discovery.zen.ping.unicast.hosts: ["elasticsearch","elasticsearch1","elasticsearch2"]
+discovery.zen.ping.unicast.hosts: ["192.168.0.43","192.168.0.42","192.168.0.41"]
